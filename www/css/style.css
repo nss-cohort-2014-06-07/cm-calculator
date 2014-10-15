@@ -1,5 +1,11 @@
 .display{
-  font-size: 30px;
+  font-size: 20px;
   margin: 20px;
   text-align: right;
+}
+
+.center{
+  width: 100%;
+  padding-top: 5px;
+  text-align: center;
 }

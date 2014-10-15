@@ -26,6 +26,17 @@
       $scope.display = '0';
     };
 
+    $scope.op = function(operator){
+      $scope.operator = operator;
+      $scope.memory = $scope.display;
+      $scope.clear();
+    };
+
+    $scope.compute = function(){
+      $scope.display = eval($scope.memory + $scope.operator + $scope.display);
+      $scope.display = $scope.display.toFixed(2);
+    };
+
     $scope.clear();
   }]);
 })();
